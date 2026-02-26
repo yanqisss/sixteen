@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AIFit | AI Fitness Platform</title>
+    <meta
+      name="description"
+      content="AIFit is an AI fitness platform for adaptive plans, training records, diet tracking, and intelligent coaching."
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="bg-glow"></div>
+    <header class="site-header">
+      <div class="container nav">
+        <a class="brand" href="#top">AIFit</a>
+        <nav>
+          <a href="#features">Features</a>
+          <a href="#architecture">Architecture</a>
+          <a href="#api">API</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero container reveal">
+        <p class="eyebrow">AI Fitness Infrastructure</p>
+        <h1>Build. Coach. Track. Improve.</h1>
+        <p class="lead">
+          AIFit provides structured workout plans, diet planning, records,
+          knowledge base search, and conversation-aware coaching APIs.
+        </p>
+        <div class="cta-row">
+          <a class="btn primary" href="#api">Test Health Endpoint</a>
+          <a class="btn ghost" href="#architecture">View Architecture</a>
+        </div>
+      </section>
+
+      <section id="features" class="container section reveal">
+        <h2>What AIFit Delivers</h2>
+        <div class="grid features">
+          <article class="card">
+            <h3>Adaptive Planning</h3>
+            <p>
+              Generate phased workout and diet plans with user profile, body
+              metrics, and weekly training targets.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Record System</h3>
+            <p>
+              Capture training and diet records, then query timeline data for
+              progress review and automation.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Knowledge + Intent</h3>
+            <p>
+              Search foods and exercise knowledge base, classify intent, and
+              keep coaching responses consistent.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="architecture" class="container section reveal">
+        <h2>Deployment Topology</h2>
+        <div class="grid topology">
+          <div class="node">
+            <p class="node-title">Static Homepage</p>
+            <p class="node-value">https://sixteenaifit.com</p>
+            <p class="node-desc">Hosted on GitHub Pages</p>
+          </div>
+          <div class="node arrow">-></div>
+          <div class="node">
+            <p class="node-title">Backend API</p>
+            <p class="node-value">https://api.sixteenaifit.com</p>
+            <p class="node-desc">Express service endpoint</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="api" class="container section reveal">
+        <h2>API Connectivity Check</h2>
+        <p>
+          This demo checks <code>/health</code> on the configured API domain.
+        </p>
+        <div class="api-box">
+          <label for="api-base">API Base URL</label>
+          <input id="api-base" value="https://api.sixteenaifit.com" />
+          <button id="check-health" class="btn primary" type="button">
+            Run Health Check
+          </button>
+          <pre id="health-output">Waiting for request...</pre>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer container">
+      <p>Powered by AIFit backend services and GitHub Pages static delivery.</p>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
